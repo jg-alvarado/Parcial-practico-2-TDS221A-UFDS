@@ -5,7 +5,7 @@ export default createStore({
   state: {
     personalInfo:{
       nombre: 'José Gil Alvarado Hernández',
-      fechaNacimiento: '14-06-2004', // Cambia la fecha a la tuya
+      fechaNacimiento: '14-06-2004',
       pasatiempos: ['Ver peliculas, Programar, Jugar videojuegos'],
       peliculasFavoritas: ['Spider-Man', 'Terminator 2: el juicio final', 'Batman: el caballero de la noche'],
       lenguajesFavoritos: ['JavaScript', 'Python', 'C#'],

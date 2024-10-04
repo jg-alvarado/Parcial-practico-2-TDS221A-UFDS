@@ -12,7 +12,7 @@
               Proveedor: {{ producto.provider }}
             </v-card-subtitle>
             <v-card-actions>
-              <v-btn icon @click="removeProducto(producto.name)"> <!-- Cambié el nombre de `product.name` a `producto.name` -->
+              <v-btn icon @click="removeProducto(producto.name)">
                 <v-icon color="red">mdi-delete</v-icon>
               </v-btn>
             </v-card-actions>
@@ -31,14 +31,14 @@
       ...mapGetters(["getProductos"]),
       productos() {
         console.log("Productos obtenidos:", JSON.stringify(this.getProductos, null, 2));
-        return this.getProductos; // Asegúrate de que el getter esté devolviendo los productos correctos
+        return this.getProductos;
       },
     },
     methods: {
       ...mapActions(["removeProducto"]),
     },
     mounted() {
-      console.log("Productos obtenidos desde Vuex:", this.getProductos); // Verifica si los productos están llegando correctamente
+      console.log("Productos obtenidos desde Vuex:", this.getProductos);
     },
   };
   </script>
